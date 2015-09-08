@@ -5,10 +5,9 @@
 [This repository](https://github.com/scabbiafw/scabbia2-helpers/) contains the files of Scabbia2 Helpers Component which is probably required for Scabbia2 Framework to run.
 
 [![Build Status](https://travis-ci.org/scabbiafw/scabbia2-helpers.png?branch=master)](https://travis-ci.org/scabbiafw/scabbia2-helpers)
-[![HHVM Status](http://hhvm.h4cc.de/badge/scabbiafw/scabbia2-helpers.svg)](http://hhvm.h4cc.de/package/scabbiafw/scabbia2-helpers)
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/scabbiafw/scabbia2-helpers/badges/quality-score.png?s=ea455753b50c686880c35dce99fd5058a28da810)](https://scrutinizer-ci.com/g/scabbiafw/scabbia2-helpers/)
-[![Code consistency](http://squizlabs.github.io/PHP_CodeSniffer/analysis/scabbiafw/scabbia2-helpers/grade.svg)](http://squizlabs.github.io/PHP_CodeSniffer/analysis/scabbiafw/scabbia2-helpers)
 [![Total Downloads](https://poser.pugx.org/scabbiafw/scabbia2-helpers/downloads.png)](https://packagist.org/packages/scabbiafw/scabbia2-helpers)
+[![Latest Stable Version](https://poser.pugx.org/scabbiafw/scabbia2-helpers/v/stable)](https://packagist.org/packages/scabbiafw/scabbia2-helpers)
+[![Latest Unstable Version](https://poser.pugx.org/scabbiafw/scabbia2-helpers/v/unstable)](https://packagist.org/packages/scabbiafw/scabbia2-helpers)
 [![License](https://poser.pugx.org/scabbiafw/scabbia2-helpers/license.png)](https://packagist.org/packages/scabbiafw/scabbia2-helpers)
 
 ## Links
