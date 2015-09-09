@@ -27,6 +27,8 @@
         "scabbiafw/scabbia2-testing": "*"
     },
     "suggest": {
+        "ext-fileinfo": "Required for mimetype resolution",
+        "ext-mbstring": "Required for multibyte string manipulation"
     },
     "autoload": {
         "psr-4": {
