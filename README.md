@@ -1,6 +1,6 @@
 # Scabbia2 Helpers Component
 
-[This repository](https://github.com/scabbiafw/scabbia2-helpers/) is the swiss knife for rest of the scabbia2 components. Includes most commonly used helper methods filed under `Arrays`, `Date`, `FileSystem`, `Html`, `Runtime` and `String` static classes.
+[This component](https://github.com/scabbiafw/scabbia2-helpers/) is the swiss knife for rest of the scabbia2 components. Includes most commonly used helper methods filed under `Arrays`, `Date`, `FileSystem`, `Html`, `Runtime` and `String` static classes.
 
 [![Build Status](https://travis-ci.org/scabbiafw/scabbia2-helpers.png?branch=master)](https://travis-ci.org/scabbiafw/scabbia2-helpers)
 [![Total Downloads](https://poser.pugx.org/scabbiafw/scabbia2-helpers/downloads.png)](https://packagist.org/packages/scabbiafw/scabbia2-helpers)
