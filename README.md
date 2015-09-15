@@ -1,8 +1,6 @@
 # Scabbia2 Helpers Component
 
-**Scabbia2** is an open source PHP framework project which is currently on planning stage. Keep visiting [project homepage](http://scabbiafw.com/) and [repositories](https://github.com/scabbiafw/) for further updates.
-
-[This repository](https://github.com/scabbiafw/scabbia2-helpers/) contains the files of Scabbia2 Helpers Component which is probably required for Scabbia2 Framework to run.
+[This repository](https://github.com/scabbiafw/scabbia2-helpers/) is the swiss knife for rest of the scabbia2 components. Includes most commonly used helper methods filed under `Arrays`, `Date`, `FileSystem`, `Html`, `Runtime` and `String` static classes.
 
 [![Build Status](https://travis-ci.org/scabbiafw/scabbia2-helpers.png?branch=master)](https://travis-ci.org/scabbiafw/scabbia2-helpers)
 [![Total Downloads](https://poser.pugx.org/scabbiafw/scabbia2-helpers/downloads.png)](https://packagist.org/packages/scabbiafw/scabbia2-helpers)
