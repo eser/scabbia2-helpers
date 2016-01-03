@@ -115,6 +115,12 @@ $output = Arrays::getRowsBut([
 //     ['i' => 2, 'j' => 3, 'k' => 4]
 // ]
 
+$output = Arrays::combine(
+    ['a', 'b', 'c'],
+    [1, 2]
+);
+// $output == ['a' => 1, 'b' => 2, 'c' => null]
+
 $output = Arrays::sortByPriority([
     'second' => 221,
     'forth' => 444,
@@ -122,6 +128,126 @@ $output = Arrays::sortByPriority([
     'first' => 878
 ], ['first', 'second']);
 // $output == ['first' => 878, 'second' => 221, 'forth' => 444, 'third' => 727]
+```
+
+### String
+
+```php
+use Scabbia\Helpers\String;
+
+$output = String::getEncoding();
+// $output == 'utf8'
+
+$output = String::coalesce($_GET['x'], '5');
+// $output == '5'
+
+$output = String::prefixLines("line 1\nline 2", '- ');
+// $output == "- line 1\n- line 2"
+
+$output = String::filter('1', String::FILTER_SANITIZE_BOOLEAN);
+// $output == true
+
+$output = String::format('value: {val}', ['val' => 5]);
+// $output == 'value: 5'
+
+String::vardump($_GLOBALS);
+// echoes all globals in html format
+
+$output = String::hash('scabbia test');
+// $output == <hex encoded strong crc hash>
+
+$output = String::generatePassword(5);
+// $output == 'trawr'
+
+$output = String::generateUuid();
+// $output == '644e1dd7-2a7f-18fb-b8ed-ed78c3f92c2b'
+
+$output = String::generate(6, 'abcdef');
+// $output == 'efdabb'
+
+$output = String::xss('<alert="test');
+// $output == '&#60;alert=&#34;test'
+
+$output = String::strip('eser', 'er');
+// $output == 'eer';
+
+$output = String::squote('test\'ed');
+// $output == 'test\\\'ed'
+
+$output = String::dquote('scabbia "php" components', true);
+// $output == '"scabbia \"php\" components"'
+
+$output = String::replaceBreaks("eser\nozvataf", '<br />');
+// $output == 'eser<br />ozvataf'
+
+$output = String::cut('testing', 4, '...');
+// $output == 'test...'
+
+$output = String::encodeHtml('<strong>eser & ozvataf</strong>');
+// $output == '&lt;strong&gt;eser &amp; ozvataf&lt;/strong&gt;'
+
+$output = String::decodeHtml('&lt;strong&gt;eser &amp; ozvataf&lt;/strong&gt;');
+// $output == '<strong>eser & ozvataf</strong>'
+
+$output = String::toLower('ESER ÖZVATAF');
+// $output == 'eser özvataf'
+
+$output = String::toUpper('eser özvataf');
+// $output == 'ESER ÖZVATAF'
+
+$output = String::capitalize('eser özvataf');
+// $output == 'Eser özvataf'
+
+$output = String::capitalizeWords('eser özvataf');
+// $output == 'Eser Özvataf'
+
+$output = String::length('eser özvataf');
+// $output == 12
+
+$output = String::startsWith('eser özvataf', 'eser');
+// $output == true
+
+$output = String::endsWith('eser özvataf', 'özvataf');
+// $output == true
+
+$output = String::substr('eser özvataf', 2, 2);
+// $output == 'er'
+
+$output = String::strpos('eser özvataf', 'er');
+// $output == 2
+
+$output = String::strstr('eser@ozvataf.com', '@');
+// $output == '@ozvataf.com'
+
+$output = String::sizeCalc(2048);
+// $output == '2K'
+
+$output = String::quantityCalc(5000000);
+// $output == '5M'
+
+$output = String::timeCalc(120);
+// $output == '2m'
+
+$output = String::removeAccent('eser özvataf');
+// $output == 'eser ozvataf'
+
+$output = String::removeInvisibles("eser\0 özvataf");
+// $output == 'eser özvataf'
+
+$output = String::slug("eser\0 özvataf");
+// $output == 'eser-ozvataf'
+
+$output = String::ordinalize(3);
+// $output == '3rd'
+
+$output = String::sanitizeFilename('eser*d.txt');
+// $output == 'eser_d.txt'
+
+$output = String::matchPaths(['/src', '/tests'], '\\tests\\notCompleted');
+// $output == true
+
+$output = String::convertLinks('my homepage is http://eser.ozvataf.com/', function ($url) { return '[' . $url . '](' . $url . ')'; });
+// $output == 'my homepage is [http://eser.ozvataf.com/](http://eser.ozvataf.com/)'
 ```
 
 ## Links
